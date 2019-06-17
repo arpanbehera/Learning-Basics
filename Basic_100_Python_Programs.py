@@ -352,26 +352,26 @@ Program 8: Find the word in pairs which are repeated in a file. Also should remo
 input: Arpan Behera, Steve jobs, william shakespear, Arpan Behera, William richardson
 output: Arpan Behera
 '''
-#-------------------------------------------------------------------
-# Using functions and procedural statement
-#--------------------------------------------------------
-# def Words_pair(Input):
-#     Input_list = Input.split(" ")
-#     repeated_list = []
-#     for x in range(0,len(Input_list)-1):
-#         if x != len(Input_list):
-#             word_search = ''.join(filter(str.isalnum,str(Input_list[x]))) + " " + ''.join(filter(str.isalnum,str(Input_list[x+1])))
-#             print(word_search)
-#             count = Input.count(word_search)
-#             if count > 1:
-#                 repeated_list.append(word_search)
-#     return repeated_list
-# 
-#
-# file_input = open("Input_7.txt",'r')
-# Input = str(file_input.read()).lower()
-# pair_words = Words_pair(Input)
-# print(set(pair_words))
+-------------------------------------------------------------------
+Using functions and procedural statement
+--------------------------------------------------------
+def Words_pair(Input):
+    Input_list = Input.split(" ")
+    repeated_list = []
+    for x in range(0,len(Input_list)-1):
+        if x != len(Input_list):
+            word_search = ''.join(filter(str.isalnum,str(Input_list[x]))) + " " + ''.join(filter(str.isalnum,str(Input_list[x+1])))
+            print(word_search)
+            count = Input.count(word_search)
+            if count > 1:
+                repeated_list.append(word_search)
+    return repeated_list
+
+
+file_input = open("Input_7.txt",'r')
+Input = str(file_input.read()).lower()
+pair_words = Words_pair(Input)
+print(set(pair_words))
 
 #=============================================================
 '''
