@@ -331,20 +331,20 @@ output: "arpan","is"
 #Using Function and Dictionaries
 #---------------------------------------------------------
 
-# def Repeated_words(Input_string):
-#     Repeated_words_dic = {}
-#     Input_string_list = Input_string.split(" ")
-#     for x in Input_string_list:
-#         if x in Repeated_words_dic:
-#             Repeated_words_dic[x] += 1
-#         else:
-#             Repeated_words_dic[x] = 1
-#     return Repeated_words_dic
-#
-# Repeated_words_dic = Repeated_words(input("Provide your string:"))
-# for key in Repeated_words_dic:
-#     if Repeated_words_dic[key] > 1:
-#         print(key, ": ", Repeated_words_dic[key])
+def Repeated_words(Input_string):
+    Repeated_words_dic = {}
+    Input_string_list = Input_string.split(" ")
+    for x in Input_string_list:
+        if x in Repeated_words_dic:
+            Repeated_words_dic[x] += 1
+        else:
+            Repeated_words_dic[x] = 1
+    return Repeated_words_dic
+
+Repeated_words_dic = Repeated_words(input("Provide your string:"))
+for key in Repeated_words_dic:
+    if Repeated_words_dic[key] > 1:
+        print(key, ": ", Repeated_words_dic[key])
 
 #============================================================
 '''
