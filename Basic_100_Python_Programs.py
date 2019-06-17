@@ -387,53 +387,53 @@ Program 9: Check the password matches the criteria for
 # Using string inbuilt function
 #-------------------------------------------------------
 
-# def Initial_letter_check(password):
-#     if password[0:1].isalpha():
-#         print("1st character Alphabet: passed")
-#         return True
-#     else:
-#         print("1st character should be Alphabet")
-#         return False
-#
-# def Uppercase_letter_check(password):
-#     count = False
-#     for letter in password:
-#         if letter.isupper():
-#             count = True
-#             break
-#     if count:
-#         print("Uppercase character check: passed")
-#         pass
-#     else:
-#         print("Require atleast one Uppercase character")
-#     return count
-#
-# def Special_char_check(password):
-#     allowed_special_char = "!\"#$%&'~"
-#     for letter in allowed_special_char:
-#         if letter in password:
-#             print("Special character check: passed")
-#             return True
-#     print("Require atleast 1 special character")
-#     return False
-#
-# def Number_check(password):
-#     for letter in password:
-#         if letter.isdigit():
-#             print("Digit check: passed")
-#             return True
-#     print("Atleast 1 digit required")
-#     return False
-#
-# def letters_count_check(password):
-#     return 8 <= len(password) <= 15
-#
-#
-# password = input("Enter Your Password:")
-# if Initial_letter_check(password) and Uppercase_letter_check(password) and Special_char_check(password) and Number_check(password) and letters_count_check(password):
-#     print("Password accepted")
-# else:
-#     print("password criteria failed")
+def Initial_letter_check(password):
+    if password[0:1].isalpha():
+        print("1st character Alphabet: passed")
+        return True
+    else:
+        print("1st character should be Alphabet")
+        return False
+
+def Uppercase_letter_check(password):
+    count = False
+    for letter in password:
+        if letter.isupper():
+            count = True
+            break
+    if count:
+        print("Uppercase character check: passed")
+        pass
+    else:
+        print("Require atleast one Uppercase character")
+    return count
+
+def Special_char_check(password):
+    allowed_special_char = "!\"#$%&'~"
+    for letter in allowed_special_char:
+        if letter in password:
+            print("Special character check: passed")
+            return True
+    print("Require atleast 1 special character")
+    return False
+
+def Number_check(password):
+    for letter in password:
+        if letter.isdigit():
+            print("Digit check: passed")
+            return True
+    print("Atleast 1 digit required")
+    return False
+
+def letters_count_check(password):
+    return 8 <= len(password) <= 15
+
+
+password = input("Enter Your Password:")
+if Initial_letter_check(password) and Uppercase_letter_check(password) and Special_char_check(password) and Number_check(password) and letters_count_check(password):
+    print("Password accepted")
+else:
+    print("password criteria failed")
 
 
 #------------------------------------------------
